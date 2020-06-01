@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* 样式重置 不同浏览器默认样式不一致 */
+
+body,
+div,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 图片 filedset边框清零 */
+
+img,
+fieldset {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+
+/* 倒三角 */
+
+.triangle-down {
+    border: 5px solid #666;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    width: 0;
+    height: 0;
+}
+
+.triangle-up-s {
+    position: relative;
+}
+
+.triangle-up-s::before,
+.triangle-up-s::after {
+    content: " ";
+    border: 6px;
+    border-color: transparent transparent #f1f1f1;
+    border-style: dashed dashed solid;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+}
+
+.triangle-up-s::after {
+    border-color: transparent transparent #fff;
+    top: -10px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}

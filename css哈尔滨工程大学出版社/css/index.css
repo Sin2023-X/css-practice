@@ -1,0 +1,702 @@
+@charset "utf-8";
+body {
+    color: #666;
+    font-size: 12px;
+}
+
+a {
+    color: #666;
+}
+
+.h-header .top-nav {
+    margin: 0 auto;
+    width: 1290px;
+    height: 74px;
+    padding: 24px;
+    background-color: rgb(47, 91, 164);
+}
+
+.h-header .top-nav .logo {
+    float: left;
+}
+
+.h-header h1 {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.h-header .user-nav {
+    float: right;
+    margin-top: 15px;
+}
+
+.user-nav a {
+    color: white;
+    margin: auto 5px;
+}
+
+.user-nav .triangle-down {
+    border-color: orange transparent transparent;
+}
+
+.user-nav li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.user-nav .username,
+.user-nav .duan {
+    display: inline-block;
+    color: white;
+}
+
+.user-nav .duan {
+    margin-top: 3px;
+}
+
+.user-menu-cover li>a {
+    color: #000;
+}
+
+.user-menu-cover li:hover {
+    background-color: rgb(72, 133, 224);
+}
+
+.user-nav .user-menu-cover {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+
+.user-nav .username:hover .user-menu-cover {
+    z-index: 10;
+    display: block;
+}
+
+.user-nav .clearfix>li {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 11px 0 14px;
+}
+
+.user-nav i {
+    float: right;
+    margin: 20px 5px;
+}
+
+.user-nav .msg-wrap {
+    background: url(../img/xiaoxi.png) no-repeat left;
+    height: 48px;
+    width: 48px;
+}
+
+.user-nav .msg-count {
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+
+/* 搜索框区域 */
+
+.h-header .search {
+    margin: 24px 256px 0 467px;
+    line-height: 30px;
+    position: relative;
+}
+
+.h-header .search .cursor-sel {
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    /* line-height: 30px; */
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background-color: rgb(219, 179, 35);
+    position: relative;
+}
+
+.h-header .search input {
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    /* line-height: 30px; */
+    padding-left: 1em;
+    border: 1px solid #e0e0e0;
+}
+
+.search .cursor-sel,
+.search input {
+    float: left;
+}
+
+.search i {
+    float: right;
+    margin-top: 12.5px;
+    margin-right: 10px;
+}
+
+.h-header .search .course-menu {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+    background-color: rgb(219, 179, 35);
+}
+
+.h-header .cursor-sel:hover .course-menu {
+    display: block;
+}
+
+.h-header .course-menu li {
+    border: 1px solid #e0e0e0;
+    width: 66px;
+}
+
+.h-header .course-menu li:hover {
+    background-color: #ccc;
+    color: white;
+}
+
+.h-header .search .icon-search {
+    position: absolute;
+    left: 455px;
+    background: url();
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.h-header .site-nav-wrap {
+    margin: 0 auto;
+    height: 60px;
+    width: 1290px;
+    border: 1px solid #ccc;
+}
+
+.site-nav-wrap .main-nav {
+    background-color: rgb(106, 163, 222);
+    width: 669px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-left: -24px;
+}
+
+.main-nav-list,
+.nav-aside-list {
+    padding-left: 20px;
+}
+
+.main-nav-list .menu-item,
+.main-nav-list .shu,
+.nav-aside-list .shu {
+    float: left;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.main-nav-list .menu-item:hover,
+.aside-content:hover {
+    background-color: rgb(115, 185, 248);
+}
+
+.main-nav-list li a,
+.nav-aside-list li a {
+    color: #fff;
+    text-align: center;
+}
+
+.site-nav-wrap .nav-link {
+    background-color: rgb(204, 106, 87);
+    width: 669px;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+    margin-right: -24px;
+}
+
+.site-nav-wrap .nav-aside-list .aside-content {
+    float: left;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+
+/* banner */
+
+.banner {
+    margin: 0 auto;
+    width: 1338px;
+    height: 471px;
+    background: url(http://www.hrbeupress.com/_upload/article/images/e0/20/ac0a64ac412a8cee53b7936d8730/1feb369f-e13f-427c-b5ec-7b7f45722458.jpg);
+    background-size: cover;
+    position: relative;
+    /* z-index: -999; */
+}
+
+.banner label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 1308px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding-left: 30px;
+    user-select: none;
+}
+
+.banner:hover .left,
+.banner:hover .right {
+    display: block;
+}
+
+.banner .left,
+.banner .right {
+    position: absolute;
+    top: 205px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: none;
+    user-select: none;
+    border: none;
+}
+
+.banner .left {
+    left: 0;
+}
+
+.banner .right {
+    right: 0;
+}
+
+.banner .left:hover,
+.banner .right:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .cycle1 {
+    position: absolute;
+    right: 55px;
+    bottom: 15px;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.banner .cycle2 {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    background-color: #fff;
+    width: 20px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+
+/* 新闻资讯 */
+
+.news {
+    height: 600px;
+    width: 1338px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(248, 248, 246);
+}
+
+.news #news-label {
+    font-size: 40px;
+    color: rgb(51, 64, 81);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.news #more-btn {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    background-color: rgb(243, 207, 42);
+    width: 80px;
+    height: 30px;
+    border: none;
+}
+
+
+/* 左侧图片 */
+
+.news #left-img {
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 612px;
+    height: 418px;
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/31/1e/7ae4253241f9a3208abb3a70a547/77b2bc74-d554-4af9-ac37-bd5d435fe028.png);
+    background-size: 612px 418px;
+}
+
+#img-title {
+    position: absolute;
+    bottom: 13px;
+    left: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+
+#cycle li a {
+    position: absolute;
+    bottom: 13px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+}
+
+#cycle1 a {
+    right: 18px;
+    background-color: rgba(134, 134, 134, 0.7);
+}
+
+#cycle2 a {
+    right: 42px;
+    background-color: rgba(134, 134, 134, 0.7);
+}
+
+#cycle3 a {
+    right: 66px;
+    background-color: rgba(134, 134, 134, 0.7);
+}
+
+#cycle4 a {
+    right: 90px;
+    background-color: rgba(134, 134, 134, 0.7);
+}
+
+#cycle5 a {
+    right: 114px;
+    background-color: #fff;
+}
+
+
+/* 右侧文本 */
+
+.news .right-content {
+    position: absolute;
+    right: 20px;
+    top: 160px;
+    width: 672px;
+}
+
+.right-content #cnt-li1 {
+    position: absolute;
+}
+
+.right-content #cnt-li2 {
+    position: absolute;
+    top: 172px;
+}
+
+.right-content #cnt-li3 {
+    position: absolute;
+    top: 323px;
+}
+
+.right-content .month {
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 40px;
+}
+
+.right-content .day {
+    font-size: 45px;
+    color: rgb(243, 207, 42);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 40px;
+}
+
+.right-content .cnt-title {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    width: 672px;
+    font-size: 18px;
+    color: rgb(45, 45, 45);
+}
+
+.right-content .cnt-body {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 672px;
+    color: rgb(153, 152, 152);
+}
+
+
+/* 产品展示 */
+
+.product {
+    height: 530px;
+    width: 1338px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.product #product-show {
+    font-size: 40px;
+    color: rgb(51, 64, 81);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.product .product-img a {
+    width: 413px;
+    height: 280px;
+    position: absolute;
+    top: 150px;
+    background-size: 413px 280px;
+}
+
+.product-img #pi-1 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/97/a2/64dc42564a559794895fa070b883/e7653f4d-f31e-4928-bedd-794fe64f27b3_s.png);
+    left: 20px;
+}
+
+.product-img #pi-2 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/a6/36/21169749487590ccf14044d568f9/5ab54948-12ed-4bbe-8f28-42e0b958475c_s.png);
+    left: 463px;
+}
+
+.product-img #pi-3 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/15/ab/deb9c1e846d8b541c7e9cb43f13c/8c3d213b-81ea-4a0e-91c2-2bec07704ef5_s.png);
+    left: 906px;
+}
+
+
+/* 新书速递 */
+
+.new-books {
+    height: 640px;
+    width: 1338px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(248, 248, 246);
+}
+
+.new-books-label {
+    font-size: 40px;
+    color: rgb(51, 64, 81);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+#newbooks-btn {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    background-color: rgb(243, 207, 42);
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+}
+
+.new-books .book-list .b-list-li {
+    overflow: hidden;
+    width: 183px;
+    height: 500px;
+    float: left;
+    margin: 135px 74px 0 20px;
+}
+
+.new-books .book-list .last-li {
+    margin-right: 0px;
+}
+
+.new-books .book-img {
+    display: block;
+    width: 183px;
+    height: 253px;
+    background-size: 183px 253px;
+}
+
+#bk-img-1 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/1d/56/829c4a1b4fe9bb8c860296c4c5fc/e0a91fb4-905e-4942-a7c3-d0b74e5ded54_s.jpg);
+}
+
+#bk-img-2 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/72/af/ed0ea4fc4cef93acdc7f2bdad96a/152d80fd-40a3-4792-a6c0-d4750ec4b18f_s.jpg);
+}
+
+#bk-img-3 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/e9/b9/cf2f1d144dab9b5071ff1951b3cc/888c94e5-285e-484c-97bb-9416b061e5fe_s.jpg);
+}
+
+#bk-img-4 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/f2/41/b10abd994db383642050d051a49f/2a308f57-cc0c-4212-9976-439982dd5e52_s.jpg);
+}
+
+#bk-img-5 {
+    background-image: url(http://www.hrbeupress.com/_upload/article/images/12/d4/b2a92e404b419accaec1063efe3f/f76e8a5f-14d9-4a9d-8583-fe9a34917afc_s.jpg);
+}
+
+.new-books .book-title {
+    float: left;
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+    color: rgb(42, 86, 164);
+    margin: 20px 10px 10px;
+    overflow: hidden;
+    /* 指定换多少行后，超出内容显示为省略号*/
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.new-books .book-introduce {
+    margin-left: 10px;
+    color: rgb(94, 94, 94);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/* bottom-pic */
+
+.bottom-pic {
+    background-image: url(http://www.hrbeupress.com/_upload/tpl/00/0a/10/template10/images/center_bottom_bg.png);
+    width: 1338px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: 1338px 200px;
+}
+
+
+/* 网页底部 */
+
+.footer {
+    background-image: url(http://www.hrbeupress.com/_upload/tpl/00/0a/10/template10/images/footer_bg.png);
+    width: 1338px;
+    height: 315px;
+    margin: 0 auto;
+    background-size: 1338px 315px;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer .about-us,
+.footer .contact-cooperation,
+.footer .friend-link {
+    float: left;
+    color: #fff;
+    font-size: 25px;
+    font-family: SimSon;
+    width: 130px;
+    height: 130px;
+    margin: 58px 0px 58px 75px;
+}
+
+.footer .friend-link {
+    width: 230px;
+}
+
+.first {
+    margin-bottom: 10px;
+}
+
+.link {
+    height: 30px;
+}
+
+.link a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 5px;
+}
+
+
+/* qrcode */
+
+.qrcode {
+    float: right;
+    margin-top: 45px;
+    margin-right: 95px;
+}
+
+.qrcode li {
+    float: left;
+    height: 160px;
+    width: 135px;
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.qrcode li label {
+    color: #fff;
+    line-height: 30px;
+}
+
+.conformation .address {
+    color: #fff;
+    position: absolute;
+    left: 58px;
+    bottom: 50px;
+}
+
+.conformation .address li {
+    float: left;
+    margin-right: 10px;
+}
+
+.conformation .other {
+    color: #fff;
+    position: absolute;
+    left: 58px;
+    bottom: 20px;
+}
+
+.conformation .other li {
+    float: left;
+    margin-right: 10px;
+}
+
+.other li a {
+    color: #fff;
+}
